@@ -1,0 +1,104 @@
+body {
+    margin: auto;
+    padding: 0;
+    background-color: #ececec;
+    font-family: 'Inter', sans-serif;
+    color: #142d4c;
+}
+
+.main {
+    max-width: 70%;
+    margin: auto;
+}
+
+.header {
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 0;
+    border: dotted 3px;
+}
+
+.title {
+    display: block;
+    font-size: 50px;
+    font-weight: 700;
+    color: #142d4c;
+    text-align: center;
+    border: 5px;
+    border-style: solid;
+    border-radius: 50px;
+    border-color: #142d4c;
+}
+
+.photo-of-me {
+    display: block;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+
+.my-skills-text {
+    font-size: 48px;
+    text-align: center;
+    font-style: normal;
+    text-transform: uppercase;
+}
+.my-skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #142d4c;
+}
+
+table {
+    padding: 5px;
+}
+
+table tbody tr {
+    display: block;
+    border: solid 5px;
+    padding: 5px;
+    margin: 5px;
+    margin-left: 0;
+}
+
+.form {
+    display: block;
+    text-align: center;
+}
+
+form {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.form-tr {
+    border: none;   
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #142d4c;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+a:hover {
+    color: #385170;
+    font-size: 18px;
+}
+
+.second-link {
+    padding: 25px;
+}
