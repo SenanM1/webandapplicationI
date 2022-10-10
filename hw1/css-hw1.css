@@ -1,0 +1,237 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #23252C;
+  font-family: "Inter", sans-serif;
+}
+
+
+.container {
+  margin: auto;
+  margin-top: 35px;
+  width: 30%;
+  border: 1px solid #ababab;
+  border-radius: 10px;
+  background-color: black;
+  box-sizing: border-box;
+  
+}
+
+.img-container {
+  width: 100%;
+  border-radius: 10px;
+  height: 400px;
+  background-image: url(../imgs/picture-of-me.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.content {
+  width: 99%;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #FFFFFF;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.passion-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #F3BF99;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.email-title {
+  text-align: center;
+  font-weight: 400;
+  color: #FFFFFF;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #3282b8;
+  border: 2px solid #bbe1fa;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin: 10px;
+  background-color:#bbe1fa;
+}
+
+a:hover {
+  background-color: #0f4c75;
+  color: #bbe1fa;
+}
+
+.links-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20%;
+  margin: 10px 0 0 0;
+}
+
+.btn {
+  padding: 10px 30px 10px 30px;
+  border: 1px solid white;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background-color: white;
+}
+
+.btn-linkedin {
+  background-color: #5093E2;
+  border-color: #3787e2;
+}
+
+.btn-linkedin-text {
+  color: white;
+}
+
+.btn-linkedin-icon {
+  color: white;
+}
+
+.btn-linkedin:hover {
+  background-color: #575758;
+  border: 1px solid #e7e8ea;
+  color: #f7f8fa;
+}
+
+.btn-email:hover {
+  background-color: #575758;
+  border: 1px solid #e7e8ea;
+  color: #f7f8fa;
+}
+
+h1 {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  font-style: normal;
+}
+
+p { 
+  font-size: 11px;
+  font-style: normal;
+  line-height: 15px;
+  letter-spacing: 0.5px;
+  color: #dcdcdc;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+footer {
+  background-color: #202020;
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+}
+
+.social-link {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icons .fa{
+  width: 25px;
+  height: 25px;
+  background-color: #918E9B;
+  padding: 2px;
+  border-radius: 3px;
+}
+
+.icons {
+  vertical-align: middle;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.icons .fa:hover {
+  background-color: #c5c1d3;
+}
+
+@media screen and (max-width: 1100px) {
+    .container {
+      width: 40%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .container {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .content {
+    width: 90%;
+  }
+
+  .links-container {
+    gap: 10%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .content {
+    width: 85%;
+  }
+
+  .links-container {
+    gap: 5%;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .container {
+    width: 99%;
+  }
+
+  .btn {
+    padding: 10px;
+  }
+}
