@@ -21,7 +21,7 @@ body {
   width: 100%;
   border-radius: 10px;
   height: 400px;
-  background-image: url(../imgs/picture-of-me.jpeg);
+  background-image: url(imgs/picture-of-me.jpeg);
   background-size: cover;
   background-position: center;
 }
