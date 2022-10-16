@@ -12,82 +12,101 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
   </head>
   <body>
-    <div class="main">
-      <div class="header">
-        <a href="index.html">🏠 Main Page</a>
-        <a href="contact-me.html">📞 Contact me</a>
-        <a href="hw1.html" target="_blank">☠️ Homework 1</a>
-        <a href="https://github.com/SenanM1/webandapplicationI" target="_blank"
-          >😈 Github Account</a
-        >
-        <a href="https://senanm1.github.io/webandapplicationI/" target="_blank"
-          >🤖 Github Page</a
-        >
+    <main>
+      <div class="main-content">
+        <div class="nav">
+          <a href="index.html">🏠 Main Page</a>
+          <a href="contact-me.html">📞 Contact me</a>
+          <a href="hw1.html" target="_blank">☠️ Homework 1</a>
+          <a
+            href="https://github.com/SenanM1/webandapplicationI"
+            target="_blank"
+            >😈 Github Account</a
+          >
+          <a
+            href="https://senanm1.github.io/webandapplicationI/"
+            target="_blank"
+            >🤖 Github Page</a
+          >
+        </div>
+        <div class="form">
+          <h1>Contact me</h1>
+          <form
+            action="mailto:smardanli13986@ada.edu.az"
+            method="post"
+            enctype="text/plain"
+          >
+            <table>
+              <tr class="form-tr">
+                <td><label for="First Name">First Name: </label></td>
+                <td>
+                  <input
+                    type="text"
+                    name="fname"
+                    id="fname"
+                    placeholder="Your name"
+                  />
+                </td>
+              </tr>
+              <tr class="form-tr">
+                <td><label for="Last Name">Last Name: </label></td>
+                <td>
+                  <input
+                    type="text"
+                    name="lname"
+                    id="lname"
+                    placeholder="Your last name"
+                  />
+                </td>
+              </tr>
+              <tr class="form-tr">
+                <td><label for="email">Email: </label></td>
+                <td>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Your email"
+                  />
+                </td>
+              </tr>
+              <tr class="form-tr">
+                <td><label for="text">Text: </label></td>
+                <td>
+                  <textarea
+                    name="text"
+                    id="text"
+                    cols="30"
+                    rows="10"
+                  ></textarea>
+                </td>
+              </tr>
+              <tr class="form-tr">
+                <td>
+                  <button class="submit-button" type="submit">SUBMIT</button>
+                </td>
+              </tr>
+            </table>
+          </form>
+        </div>
+        <div class="contact-me">
+          <h1>OTHER LINKS</h1>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Youtube</a></li>
+            <li><a href="#">Linkedin</a></li>
+            <li><a href="#">E-mail</a></li>
+          </ul>
+        </div>
+        <hr />
+
+        <footer>&copy; Copyright 2022 ADA University Sanan Mardanli</footer>
       </div>
-      <div class="form">
-        <form
-          action="mailto:smardanli13986@ada.edu.az"
-          method="post"
-          enctype="text/plain"
-        >
-          <table>
-            <tr class="form-tr">
-              <td><label for="First Name">First Name: </label></td>
-              <td>
-                <input
-                  type="text"
-                  name="fname"
-                  id="fname"
-                  placeholder="Your name"
-                />
-              </td>
-            </tr>
-            <tr class="form-tr">
-              <td><label for="Last Name">Last Name: </label></td>
-              <td>
-                <input
-                  type="text"
-                  name="lname"
-                  id="lname"
-                  placeholder="Your last name"
-                />
-              </td>
-            </tr>
-            <tr class="form-tr">
-              <td><label for="email">Email: </label></td>
-              <td>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Your email"
-                />
-              </td>
-            </tr>
-            <tr class="form-tr">
-              <td><label for="text">Text: </label></td>
-              <td>
-                <textarea name="text" id="text" cols="30" rows="10"></textarea>
-              </td>
-            </tr>
-            <tr class="form-tr">
-              <td><input type="submit" value="Submit" /></td>
-            </tr>
-          </table>
-        </form>
-      </div>
-      <div class="contact-me">
-        <h1>CONTACT ME</h1>
-        <ul>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Youtube</a></li>
-          <li><a href="#">Linkedin</a></li>
-          <li><a href="#">E-mail</a></li>
-        </ul>
-      </div>
-    </div>
+    </main>
   </body>
 </html>
