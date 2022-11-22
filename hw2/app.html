@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HW2</title>
+    <link rel="stylesheet" href="app.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="search-bar-name">
+        <input type="text" class="searchInput" placeholder="Type a city" />
+        <button class="searchButton" type="submit">Search</button>
+      </div>
+
+      <div class="main-content">
+        <div class="head-part">
+          <div class="location-details">
+            <span class="city-name"></span>
+            <span> - </span>
+            <span class="country-name"></span>
+          </div>
+
+          <span class="current-temp"></span>
+
+          <div class="weather-details">
+            <span class="w-condition"></span>
+            <span> - </span>
+            <span class="detailed-description"></span>
+          </div>
+
+          <div class="temps">
+            <span class="min-temp"></span>
+            <span class="max-temp"></span>
+            <span class="real-feel"></span>
+          </div>
+        </div>
+
+        <div class="img-container"></div>
+
+        <div class="remaning-part">
+          <div class="timezone">
+            <span class="time"></span>
+            <span> - </span>
+            <span class="date"></span>
+          </div>
+
+          <div class="humidty-pressure">
+            <span class="humidty"></span>
+            <span> - </span>
+            <span class="pressure"></span>
+          </div>
+
+          <div class="wind">
+            <span class="wind-speed"></span>
+            <span> - </span>
+            <span class="wind-direction"></span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

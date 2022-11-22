@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    transition: all 0.2s ease-in;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #222831;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+span {
+    font-size: 24px;
+    color: #EEEEEE;
+}
+
+.location-details span{
+    font-style: italic;
+    font-size: 18px;
+}
+
+.current-temp {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.weather-details span {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.temps span {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.timezone span {
+    font-style: italic;
+    font-size: 18px;
+}
+
+.humidty-pressure span {
+    font-weight: bold;
+    font-size: 22px;
+    font-style: italic;
+}
+
+.wind span{
+    font-size: 15px;
+}
+
+.main-content {
+    border: 0.5px solid #393E46;
+    border-radius: 10%;
+    padding: 80px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    background-color: #00ADB5;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.head-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+
+.remaning-part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+
+.img-container {
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 40%;
+  background-color: #EEEEEE;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.searchInput {  
+    width: 100%;
+    padding: 5px 20px;
+    margin: 5px 0;
+    border-radius: 10px;
+    border: 2px solid #EEEEEE;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+button {
+    appearance: none;
+    -webkit-appearance: none;
+
+    padding: 5px;
+    border: none;
+    background-color: #EEEEEE;
+    color: #393E46;
+    font-weight: 600;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    border-radius: 15px;
+    background-color: #393E46;
+    color: #EEEEEE;
+}
