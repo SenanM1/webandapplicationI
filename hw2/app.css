@@ -10,7 +10,7 @@
 
 body {
     font-family: "Inter", sans-serif;
-    background-color: #222831;
+    background-color: #EEEEEE;
 }
 
 main {
@@ -62,7 +62,7 @@ span {
 }
 
 .main-content {
-    border: 0.5px solid #393E46;
+    border: 0.5px solid #d6d6d6;
     border-radius: 10%;
     padding: 80px;
     margin: 10px;
@@ -107,7 +107,7 @@ span {
     padding: 5px 20px;
     margin: 5px 0;
     border-radius: 10px;
-    border: 2px solid #EEEEEE;
+    border: 2px solid #222831;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -117,8 +117,8 @@ button {
 
     padding: 5px;
     border: none;
-    background-color: #EEEEEE;
-    color: #393E46;
+    background-color: #222831;
+    color: #EEEEEE;
     font-weight: 600;
     width: 100%;
     border-radius: 5px;
