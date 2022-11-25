@@ -15,9 +15,50 @@
   </head>
   <body>
     <main>
-      <div class="search-bar-name">
-        <input type="text" class="searchInput" placeholder="Type a city" />
-        <button class="searchButton" type="submit">Search</button>
+      <form>
+        <h2>Please select search method:</h2>
+        <div class="checkBtns">
+          <div>
+            <input
+              type="radio"
+              name="searchMethod"
+              id="cityCheck"
+              value="cityName"
+            />
+            <label for="cityCheck">By city name</label>
+          </div>
+
+          <div>
+            <input type="radio" name="searchMethod" id="lCheck" value="lName" />
+            <label for="lCheck">By latitude and longitude </label>
+          </div>
+        </div>
+      </form>
+
+      <div class="search-bar-l display-none">
+        <input
+          type="number"
+          id="latInput"
+          class="searchInput"
+          placeholder="Enter a latitude"
+        />
+        <input
+          type="number"
+          id="lonInput"
+          class="searchInput"
+          placeholder="Enter a longitude"
+        />
+        <button id="lButton" class="searchButton" type="submit">Search</button>
+      </div>
+
+      <div class="search-bar-c display-none">
+        <input
+          type="text"
+          id="cityInput"
+          class="searchInput"
+          placeholder="Type a city"
+        />
+        <button id="cButton" class="searchButton" type="submit">Search</button>
       </div>
 
       <div class="main-content">

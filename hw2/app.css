@@ -18,12 +18,33 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 5%;
+    margin-top: 3%;
+    text-align: center;
 }
 
 span {
     font-size: 24px;
     color: #EEEEEE;
+    text-align: center;
+}
+
+h2 {
+    font-size: 18px;
+    text-align: center;
+    font-style: italic;
+    color: #393E46;
+    
+}
+
+.checkBtns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+
+    color: #393E46;
+    font-style: italic;
+    font-weight: 300;
 }
 
 .location-details span{
@@ -111,6 +132,11 @@ span {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+#lonInput,
+#latInput {
+    width: 100%;
+}
+
 button {
     appearance: none;
     -webkit-appearance: none;
@@ -129,4 +155,119 @@ button:hover {
     border-radius: 15px;
     background-color: #393E46;
     color: #EEEEEE;
+}
+
+.display-none {
+    display: none;
+}
+
+.search-bar-l,
+.search-bar-c {
+    width: 300px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 550px) {
+    .main-content {
+        padding: 50px;
+    }
+
+    h2 {
+        font-size: 16px;      
+    }
+
+    .checkBtns {
+        gap: 20px;
+    }
+
+    .location-details span{
+        font-size: 16px;
+    }
+
+    .current-temp {
+        font-size: 40px;
+    }
+
+    .weather-details span {
+        font-size: 16px;
+    }
+
+    .temps span {
+        font-size: 18px;
+    }
+
+    .timezone span {
+        font-size: 16px;
+    }
+
+    .humidty-pressure span {
+        font-size: 20px;
+    }
+
+    .wind span{
+        font-size: 13px;
+    }
+
+    .search-bar-l,
+    .search-bar-c {
+    width: 250px;
+}
+}
+
+
+@media screen and (max-width: 420px) {
+    .main-content {
+        padding: 30px;
+    }
+
+    h2 {
+        font-size: 15px;      
+    }
+
+    .checkBtns {
+        gap: 10px;
+    }
+
+    .location-details span{
+        font-size: 14px;
+    }
+
+    .current-temp {
+        font-size: 36px;
+    }
+
+    .weather-details span {
+        font-size: 14px;
+    }
+
+    .temps span {
+        font-size: 16px;
+    }
+
+    .timezone span {
+        font-size: 14px;
+    }
+
+    .humidty-pressure span {
+        font-size: 18px;
+    }
+
+    .wind span{
+        font-size: 11px;
+    }
+
+    .search-bar-l,
+    .search-bar-c {
+    width: 200px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    h1 {
+        font-size: 12px;
+    }
+    .checkBtns {
+        flex-direction: column;
+    }
 }

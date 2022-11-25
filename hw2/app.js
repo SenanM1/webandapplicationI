@@ -14,8 +14,35 @@ const windSpeed = document.querySelector('.wind-speed');
 const windDirection = document.querySelector('.wind-direction');
 const imgCont = document.querySelector('.img-container');
 
-const searchInput = document.querySelector('.searchInput');
-const searchButton = document.querySelector('.searchButton');
+const searchFormByCity = document.querySelector('.search-bar-c');
+const searchFormByL = document.querySelector('.search-bar-l');
+
+const searchInputC = document.querySelector('#cityInput');
+const searchButtonC = document.querySelector('#cButton');
+
+const searchInputLon = document.querySelector('#lonInput');
+const searchInputLat = document.querySelector('#latInput');
+const searchButtonL = document.querySelector('#lButton');
+
+const checkBtns = document.querySelectorAll("input[name='searchMethod']");
+
+// Radio Buttons selection
+const findSelected = () => {
+    let selectedCheck = document.querySelector("input[name='searchMethod']:checked")
+    if(selectedCheck.id === 'cityCheck'){
+        searchFormByCity.classList.remove('display-none');
+        searchFormByL.classList.add('display-none');  
+    } else {
+        searchFormByL.classList.remove('display-none');
+        searchFormByCity.classList.add('display-none');
+    }
+}
+
+checkBtns.forEach((check) => {
+    check.addEventListener('change', findSelected);
+});
+
+// For avoiding repeation
 
 const fetchData = (data) => {
     const {name} = data;
@@ -70,14 +97,19 @@ const getCountry = async (country) => {
     try {
         const res = await fetch(`https://restcountries.com/v3.1/alpha/${country}`);
         const data = await res.json();
-        countryName.textContent = data[0].altSpellings[1];
+        if(data[0].altSpellings[1]){
+            countryName.textContent = data[0].altSpellings[1];
+        } 
+        else{
+            countryName.textContent = data[0].altSpellings[0];
+        }
     } catch (e) {
         alert('No country such as exists!', e);
     }
 }
 
 // Getting API by typing city name
-const fetchWeather = async (city) => {
+const fetchWeatherByName = async (city) => {
     try {
         const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=85f1cd8997fc9613aec7e86ba854d048`);
         const data = await res.json();
@@ -87,10 +119,28 @@ const fetchWeather = async (city) => {
     }
 }
 
-searchButton.addEventListener('click', (e) => {
+searchButtonC.addEventListener('click', (e) => {
     e.preventDefault();
-    fetchWeather(searchInput.value);
-    searchInput.value = '';
+    fetchWeatherByName(searchInputC.value);
+    searchInputC.value = '';
+});
+
+// Getting API by typing longitude and latitude name
+const fetchWeatherByL = async (lat, lon) => {
+    try {
+        const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=85f1cd8997fc9613aec7e86ba854d048`);
+        const data = await res.json();
+        fetchData(data);
+    } catch(e) {
+        alert('No city such as exists!', e);
+    }
+}
+
+searchButtonL.addEventListener('click', (e) => {
+    e.preventDefault();
+    fetchWeatherByL(searchInputLat.value, searchInputLon.value);
+    searchInputLat.value = '';
+    searchInputLon.value = '';
 });
 
 
