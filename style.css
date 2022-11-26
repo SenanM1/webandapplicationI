@@ -6,16 +6,12 @@ body {
   color: #142d4c;
 }
 
-main {
+
+.main-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-self: center;
-}
-
-.main-content {
-  width: 70%;
-  margin: auto;
 }
 
 .nav {
