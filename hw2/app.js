@@ -47,7 +47,7 @@ checkBtns.forEach((check) => {
 const fetchData = (data) => {
     const {name} = data;
     const {country} = data.sys;
-    const date = new Date(data.dt);
+    const date = new Date(data.dt*1000);
     const {main, description} = data.weather[0];
     const {feels_like, humidity, pressure, temp, temp_max, temp_min} = data.main;
     const {deg,speed} = data.wind;
@@ -122,7 +122,7 @@ const fetchWeatherByName = async (city) => {
 searchButtonC.addEventListener('click', (e) => {
     e.preventDefault();
     fetchWeatherByName(searchInputC.value);
-    searchInputC.value = '';
+    searchButtonC.value = '';
 });
 
 // Getting API by typing longitude and latitude name
